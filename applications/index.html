@@ -14,6 +14,21 @@
   gtag("js", new Date());
   gtag("config", "G-YPTR1K4Y5G");
 </script>
+<style>
+  .entry{ padding:52px 0; border-top:1px solid var(--panel-line); }
+  .entry:first-of-type{border-top:none;}
+  .entry-head{ display:flex; align-items:baseline; gap:16px; margin-bottom:14px; flex-wrap:wrap; }
+  .entry-title{
+    font-family:'Fraunces', serif; font-weight:500; font-size:clamp(20px,2.6vw,26px);
+    color:var(--chalk);
+  }
+  .entry-body{ max-width:640px; color:var(--chalk-dim); font-size:15px; line-height:1.7; }
+  .entry-body p{margin:0 0 12px;}
+  .entry-body p:last-child{margin-bottom:0;}
+  .entry-links{ margin-top:10px; font-family:'IBM Plex Mono', monospace; font-size:12px; }
+  .entry-links a{ color:var(--teal); text-decoration:none; border-bottom:1px solid transparent; }
+  .entry-links a:hover{ border-color:var(--teal); }
+</style>
 </head>
 <body>
 
@@ -36,23 +51,61 @@
 <section class="page-hero">
   <div class="page-eyebrow">06 — Quantum Made Real</div>
   <h1 class="page-title">What quantum mechanics has ever done for you</h1>
-  <p class="page-sub">Semiconductors, lasers, MRI, atomic clocks, quantum computing — the bridge between strange theory and the world sitting around you.</p>
+  <p class="page-sub">Quantum theory can feel abstract — wave functions, uncertainty, entangled particles. It's also running in your pocket. Every technology below only works because the ideas in <a href="../quantum-101/">Quantum 101</a> are literally true.</p>
 </section>
 
 <div class="wrap"><div class="divider"></div></div>
 
 <section>
   <div class="wrap">
-    <div class="stub-note">
-      SCAFFOLD — Planned: one entry per technology, each linking back to the underlying concept page.<br>Structure and design system are live; content is not written yet.
+
+    <div class="entry">
+      <div class="entry-head"><h2 class="entry-title">Semiconductors</h2></div>
+      <div class="entry-body">
+        <p>Every chip in every phone, laptop, and computer relies on band theory — the quantum-mechanical description of how electrons occupy discrete energy bands in a crystal, with gaps between them that ordinary electrons can't cross. Silicon's particular gap size is exactly what makes it useful as a semiconductor: small enough to control with a little added energy, large enough to switch cleanly on and off.</p>
+        <p>Transistors, the on/off switches that make up every digital circuit, are a direct engineering application of this quantum band structure.</p>
+      </div>
     </div>
+
+    <div class="entry">
+      <div class="entry-head"><h2 class="entry-title">Lasers</h2></div>
+      <div class="entry-body">
+        <p>A laser works by stimulated emission — an idea Einstein worked out in 1917, decades before the technology existed. Pump enough atoms into an excited quantum state, and a passing photon of the right energy triggers them to release identical photons in lockstep: same frequency, same phase, same direction. That coordinated cascade is what makes laser light so different from an ordinary bulb's.</p>
+        <p>Barcode scanners, fiber-optic internet, laser eye surgery, and the read/write heads in optical drives all depend on this quantum effect being reliable and repeatable.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head"><h2 class="entry-title">MRI</h2></div>
+      <div class="entry-body">
+        <p>Magnetic Resonance Imaging works by exploiting nuclear spin — the same quantized, two-valued property Stern and Gerlach first measured in atoms in 1922. A strong magnetic field aligns the spins of hydrogen nuclei in your body's water molecules; a radio pulse knocks them out of alignment; and the signal they emit as they realign, which differs subtly by tissue type, gets turned into an image.</p>
+        <p>None of it works without spin being genuinely quantized rather than a continuous, classical property — the same fact demonstrated on <a href="../experiments/">The Experiments</a> page.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head"><h2 class="entry-title">Atomic Clocks</h2></div>
+      <div class="entry-body">
+        <p>Atoms absorb and emit light only at very specific, quantized frequencies — a direct consequence of their electrons occupying discrete energy levels. Atomic clocks use this as an incredibly precise metronome: the frequency of light corresponding to a particular transition in a cesium atom is so exact and so universal that it defines the second itself.</p>
+        <p>GPS depends on this precision directly — satellites carry atomic clocks, and your phone's location is calculated from tiny differences in signal timing that would be meaningless without quantum-level clock accuracy.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head"><h2 class="entry-title">Quantum Computing</h2></div>
+      <div class="entry-body">
+        <p>A classical bit is a 0 or a 1. A qubit, exploiting superposition, is both at once, with each possibility carrying its own probability — and multiple qubits can be entangled with each other, correlated in ways that have no classical equivalent. Certain calculations that would take a classical computer longer than the age of the universe become tractable when you can compute across all those superposed possibilities simultaneously.</p>
+        <p>This is the newest entry on this page and the least mature — useful quantum computers exist today, but the field is still working out how to keep qubits stable (coherent) for long enough to do useful work. It's the most direct commercial descendant of the ideas in <a href="../quantum-101/">Quantum 101</a>.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <footer>
   <div class="wrap footer-inner">
     <div class="footer-psi">Ψ</div>
-    <div class="footer-note">SCAFFOLD PAGE — NOT FINAL CONTENT</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
   </div>
 </footer>
 
