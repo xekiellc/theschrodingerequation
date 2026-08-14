@@ -1,0 +1,14 @@
+{
+  "name": "the-schrodinger-equation",
+  "version": "0.1.0",
+  "description": "TheSchrodingerEquation.com — quantum physics publication",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "wrangler pages deploy ."
+  },
+  "devDependencies": {
+    "katex": "^0.16.9",
+    "wrangler": "^3.60.0"
+  }
+}
