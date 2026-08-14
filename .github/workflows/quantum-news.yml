@@ -38,6 +38,6 @@ jobs:
         run: |
           git config user.name "quantum-news-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add content/news/ news/
+          git add content/news/ news/ || true
           git diff --staged --quiet || git commit -m "Quantum News: automated post"
           git push
