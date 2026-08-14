@@ -1,0 +1,12 @@
+name = "the-schrodinger-equation"
+compatibility_date = "2026-08-01"
+pages_build_output_dir = "."
+
+# Ask Ψ backend — Cloudflare Pages Function at /functions/api/ask-psi.js
+# Anthropic API key is set as a secret via:
+#   wrangler pages secret put ANTHROPIC_API_KEY
+#
+# Optional: bind a Vectorize index here once RAG grounding is set up
+# [[vectorize]]
+# binding = "QUANTUM_KB"
+# index_name = "schrodinger-equation-content"
