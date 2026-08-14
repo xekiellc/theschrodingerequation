@@ -4,11 +4,13 @@ name: Quantum News
 # The commit triggers a Cloudflare Pages rebuild automatically.
 #
 # Requires an ANTHROPIC_API_KEY repo secret if generation calls the Anthropic API.
-# Cadence below is a placeholder — set per the decision in INFRASTRUCTURE.md §7.
+# Cadence: weekly, Monday 13:00 UTC. Not yet active — see the note in
+# news/index.html and INFRASTRUCTURE.md §7 for the human-review decision this
+# is waiting on before it actually starts publishing.
 
 on:
   schedule:
-    - cron: "0 13 * * 1,4"   # Mon & Thu, 13:00 UTC — placeholder cadence
+    - cron: "0 13 * * 1"     # every Monday, 13:00 UTC
   workflow_dispatch: {}        # allows manual trigger from the Actions tab
 
 jobs:
