@@ -1,0 +1,41 @@
+name: Quantum News
+
+# Generates a new Quantum News post on a schedule and commits it to /content/news/.
+# The commit triggers a Cloudflare Pages rebuild automatically.
+#
+# Requires an ANTHROPIC_API_KEY repo secret if generation calls the Anthropic API.
+# Cadence below is a placeholder — set per the decision in INFRASTRUCTURE.md §7.
+
+on:
+  schedule:
+    - cron: "0 13 * * 1,4"   # Mon & Thu, 13:00 UTC — placeholder cadence
+  workflow_dispatch: {}        # allows manual trigger from the Actions tab
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate news post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "TODO: run the content-generation script here."
+          echo "Should write a new markdown file to content/news/ following"
+          echo "the site's epistemic taxonomy and voice, and cite sources."
+          # node scripts/generate-news-post.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "quantum-news-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add content/news/
+          git diff --staged --quiet || git commit -m "Quantum News: automated post"
+          git push
