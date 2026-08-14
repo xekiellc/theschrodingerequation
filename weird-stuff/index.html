@@ -14,6 +14,39 @@
   gtag("js", new Date());
   gtag("config", "G-YPTR1K4Y5G");
 </script>
+<style>
+  .entry{
+    padding:64px 0;
+    border-top:1px solid var(--panel-line);
+  }
+  .entry:first-of-type{border-top:none;}
+  .entry-head{margin-bottom:20px;}
+  .entry-title{
+    font-family:'Fraunces', serif; font-weight:500; font-size:clamp(22px,3vw,30px);
+    color:var(--chalk); margin:12px 0 0;
+  }
+  .entry-body{
+    max-width:640px; color:var(--chalk-dim); font-size:15.5px; line-height:1.75;
+  }
+  .entry-body p{margin:0 0 16px;}
+  .entry-body p:last-child{margin-bottom:0;}
+  .myth-block{
+    margin-top:80px; padding-top:56px; border-top:1px solid var(--panel-line);
+  }
+  .myth-eyebrow{
+    font-family:'IBM Plex Mono', monospace; font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase;
+    color:var(--teal); margin-bottom:14px;
+  }
+  .myth-title{
+    font-family:'Fraunces', serif; font-weight:500; font-size:clamp(22px,3vw,30px);
+    color:var(--chalk); margin:0 0 14px;
+  }
+  .myth-desc{color:var(--chalk-dim); font-size:15px; line-height:1.65; max-width:560px; margin-bottom:40px;}
+  .myth-list{display:flex; flex-direction:column; gap:1px; background:var(--panel-line); border:1px solid var(--panel-line); border-radius:12px; overflow:hidden;}
+  .myth-item{background:var(--panel); padding:22px 26px;}
+  .myth-claim{font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.05em; color:#F08A6C; margin-bottom:8px;}
+  .myth-reality{color:var(--chalk-dim); font-size:14.5px; line-height:1.6;}
+</style>
 </head>
 <body>
 
@@ -36,15 +69,77 @@
 <section class="page-hero">
   <div class="page-eyebrow">04 — The Weird Stuff</div>
   <h1 class="page-title">Where physics stops sounding like physics</h1>
-  <p class="page-sub">Schrödinger's Cat, Many-Worlds, the Measurement Problem, and more — every entry tagged Established / Thought Experiment / Interpretation / Open Question.</p>
+  <p class="page-sub">Every entry here is labeled by what kind of claim it actually is — established physics, a thought experiment, an interpretation, or a genuinely open question — so the strangeness stays honest instead of blurring into vibes.</p>
 </section>
 
 <div class="wrap"><div class="divider"></div></div>
 
 <section>
   <div class="wrap">
-    <div class="stub-note">
-      SCAFFOLD — Planned: full entries with the four-tag taxonomy, plus a "Things Quantum Physics Does Not Say" myth-busting subsection.<br>Structure and design system are live; content is not written yet.
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="tag tag-thought">Thought Experiment</span>
+        <h2 class="entry-title">Schrödinger's Cat</h2>
+      </div>
+      <div class="entry-body">
+        <p>Put a cat in a sealed box with a radioactive atom, a detector, and a mechanism that releases poison the instant the atom decays. Whether the atom has decayed is genuinely undetermined — a quantum superposition — until it's measured. So, by a strict extension of quantum mechanics to the macroscopic cat, shouldn't the cat itself be in a superposition of alive and dead until someone opens the box?</p>
+        <p>Schrödinger proposed this in 1935 — not to describe something he thought actually happens, but to argue that something must be wrong with a naive reading of quantum mechanics. No one has ever put an actual cat in this situation, and no one thinks a real cat is ever in a state of being both alive and dead. The thought experiment is a tool for exposing exactly where the "measurement problem" bites, not a report of an observed phenomenon.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="tag tag-interpretation">Interpretation</span>
+        <h2 class="entry-title">Many-Worlds: does reality split on every measurement?</h2>
+      </div>
+      <div class="entry-body">
+        <p>The Many-Worlds interpretation takes the wave function completely literally and refuses to add a collapse process on top of it. Every time a measurement happens, on this view, all of the possible outcomes occur — each in its own branch of reality, causally disconnected from the others. You only ever experience one branch, so it looks like a single definite outcome happened, even though (on this interpretation) all of them did.</p>
+        <p>The appeal is mathematical economy: no extra collapse rule is needed, just the Schrödinger equation, applied consistently, forever. The cost is a universe that's constantly branching into unobservable copies — which is exactly the kind of claim that can't currently be tested, and may not ever be. Many-Worlds is taken seriously by working physicists, but it's an interpretation of what the mathematics means, not a measured result.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="tag tag-open">Open Question</span>
+        <h2 class="entry-title">The Measurement Problem</h2>
+      </div>
+      <div class="entry-body">
+        <p>Quantum mechanics gives you a wave function evolving smoothly and deterministically — until you measure it, at which point you get one definite, probabilistic outcome. The theory itself doesn't specify what a "measurement" is, physically, or explain the apparent transition from many possibilities to one actuality. That gap is the measurement problem.</p>
+        <p>Every major interpretation of quantum mechanics — Copenhagen, Many-Worlds, pilot-wave theory, objective collapse models — is, at bottom, a different proposed answer to this same question. None of them has been experimentally ruled in or out, which is exactly what makes it an open question rather than a solved one with a few competing footnotes.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="tag tag-open">Open Question</span>
+        <h2 class="entry-title">Does reality exist before we look at it?</h2>
+      </div>
+      <div class="entry-body">
+        <p>In classical physics, objects have definite properties whether or not anyone is looking — the moon is somewhere specific even when no one's checking. Quantum mechanics makes this harder to say with confidence. Bell's theorem and the experiments testing it show that no theory with both locality (no faster-than-light influence) and realism (definite pre-measurement properties) can match what's actually observed. At least one of those two comfortable assumptions has to go.</p>
+        <p>What physicists don't agree on is which one — or what it means for the world when you give it up. This is one of the genuinely unresolved foundational questions in physics, not a settled debate with one side quietly correct.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="wrap myth-block">
+    <div class="myth-eyebrow">Things Quantum Physics Does Not Say</div>
+    <h2 class="myth-title">Common claims the actual physics doesn't support</h2>
+    <p class="myth-desc">Popular science gets sloppy about quantum mechanics constantly. These are some of the most common overreaches — stated plainly, so the real weirdness above doesn't get confused with the fake weirdness below.</p>
+    <div class="myth-list">
+      <div class="myth-item">
+        <div class="myth-claim">CLAIM: "Consciousness creates reality."</div>
+        <div class="myth-reality">Measurement in quantum mechanics doesn't require a conscious observer — a detector, a photographic plate, or any sufficiently decohering interaction does the same job. Nothing in the physics singles out human awareness as special.</div>
+      </div>
+      <div class="myth-item">
+        <div class="myth-claim">CLAIM: Entanglement allows faster-than-light communication.</div>
+        <div class="myth-reality">Measuring one entangled particle does instantly correlate with the other, but the outcome you get is random — you can't use it to send a chosen message. Comparing results to see the correlation still requires an ordinary, light-speed channel.</div>
+      </div>
+      <div class="myth-item">
+        <div class="myth-claim">CLAIM: "Quantum" proves manifestation or thoughts affecting outcomes.</div>
+        <div class="myth-reality">Nothing in quantum mechanics connects intention or belief to physical outcomes. This borrows quantum vocabulary for claims the physics doesn't make and hasn't tested.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -52,7 +147,7 @@
 <footer>
   <div class="wrap footer-inner">
     <div class="footer-psi">Ψ</div>
-    <div class="footer-note">SCAFFOLD PAGE — NOT FINAL CONTENT</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
   </div>
 </footer>
 
