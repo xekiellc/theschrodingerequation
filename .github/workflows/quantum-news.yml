@@ -1,0 +1,43 @@
+name: Quantum News
+
+# Checks for new quantum physics research 4x/day and, only when something new
+# and relevant exists, generates and auto-publishes a post. No forced quota —
+# most checks will find nothing and exit without committing.
+#
+# Requires an ANTHROPIC_API_KEY repository secret (Settings > Secrets and
+# variables > Actions). This is separate from the Cloudflare Pages secret of
+# the same name used by Ask Ψ — the two platforms don't share secret stores.
+#
+# Data source: arXiv API (quant-ph category), free, no key required.
+# Industry/product news via NewsAPI is a planned follow-up once a NewsAPI key
+# is available — not wired in yet.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"    # every 6 hours — 4x/day
+  workflow_dispatch: {}        # allows manual trigger from the Actions tab
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check for new research and generate post if found
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-news-post.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "quantum-news-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add content/news/ news/
+          git diff --staged --quiet || git commit -m "Quantum News: automated post"
+          git push
