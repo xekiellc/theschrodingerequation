@@ -14,6 +14,23 @@
   gtag("js", new Date());
   gtag("config", "G-YPTR1K4Y5G");
 </script>
+<style>
+  .entry{ padding:52px 0; border-top:1px solid var(--panel-line); }
+  .entry:first-of-type{border-top:none;}
+  .entry-head{ display:flex; align-items:center; gap:14px; margin-bottom:14px; flex-wrap:wrap; }
+  .entry-title{
+    font-family:'Fraunces', serif; font-weight:500; font-size:clamp(20px,2.6vw,26px);
+    color:var(--chalk);
+  }
+  .entry-body{ max-width:640px; color:var(--chalk-dim); font-size:15px; line-height:1.7; }
+  .entry-body p{margin:0 0 12px;}
+  .entry-body p:last-child{margin-bottom:0;}
+  .scope-note{
+    max-width:640px; margin:0 0 56px; padding:20px 24px;
+    background:var(--panel); border:1px solid var(--panel-line); border-radius:10px;
+    font-size:14px; color:var(--chalk-dim); line-height:1.65;
+  }
+</style>
 </head>
 <body>
 
@@ -36,23 +53,56 @@
 <section class="page-hero">
   <div class="page-eyebrow">07 — Beyond Schrödinger</div>
   <h1 class="page-title">What comes after this equation</h1>
-  <p class="page-sub">Quantum field theory, quantum information, quantum gravity — the Schrödinger equation isn't the fundamental equation governing everything quantum, and this section says so plainly.</p>
+  <p class="page-sub">The Schrödinger equation describes non-relativistic quantum mechanics — particles moving much slower than light. It isn't the final word on physics, and it doesn't pretend to be. Here's what lies past its boundary.</p>
 </section>
 
 <div class="wrap"><div class="divider"></div></div>
 
 <section>
   <div class="wrap">
-    <div class="stub-note">
-      SCAFFOLD — Planned: clearly labeled as "Beyond Schrödinger" so scope honesty is preserved.<br>Structure and design system are live; content is not written yet.
+
+    <div class="scope-note">
+      Everything else on this site — Quantum 101, the experiments, the weird stuff — sits comfortably inside what the Schrödinger equation actually governs. The topics below don't. They're real, active physics, but they either extend the equation, replace it in regimes where it breaks down, or sit at questions physics hasn't answered yet.
     </div>
+
+    <div class="entry">
+      <div class="entry-head"><h2 class="entry-title">Quantum Field Theory</h2></div>
+      <div class="entry-body">
+        <p>The Schrödinger equation treats particles as fixed objects moving through space and time. It has no room for particles being created or destroyed — which happens constantly at high energies, where relativity matters and mass can convert into new particles. Quantum field theory replaces particles with fields as the fundamental objects: what we call a "particle" is just a localized excitation of its underlying field.</p>
+        <p>Dirac's equation, which predicted antimatter, was an early step toward this — a relativistic replacement for Schrödinger's equation. QFT is the fuller framework it eventually grew into, and it underlies the Standard Model of particle physics.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head"><h2 class="entry-title">Quantum Information</h2></div>
+      <div class="entry-body">
+        <p>Quantum information theory asks what quantum mechanics implies for information itself — how much can be encoded in a quantum state, how entanglement can be used as a resource, and what quantum systems can compute or communicate that classical systems fundamentally can't. It's the theoretical foundation underneath quantum computing, discussed on <a href="../applications/">Quantum Made Real</a>, and quantum cryptography, which uses measurement's disturbance of a quantum state to detect eavesdropping.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head"><h2 class="entry-title">Quantum Gravity</h2></div>
+      <div class="entry-body">
+        <p>General relativity describes gravity as curved spacetime; quantum mechanics describes everything else as discrete, probabilistic, and quantized. The two theories are individually extraordinarily well-tested, and nobody has yet found a way to combine them into one framework that works in every regime — particularly inside black holes and at the universe's earliest moments, where both gravity and quantum effects should matter at once.</p>
+        <p>String theory and loop quantum gravity are the two most developed attempts at an answer. Neither has experimental confirmation. This is genuinely open physics, not a settled result with unresolved details.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head"><h2 class="entry-title">The Quantum-to-Classical Transition</h2></div>
+      <div class="entry-body">
+        <p>If everything is fundamentally quantum, why does the everyday world look so reliably classical? Why don't chairs and cats show interference patterns? The mainstream answer is decoherence: large objects interact with their environment so constantly and thoroughly that their quantum superpositions wash out almost instantly, leaving behind what looks like ordinary, definite classical behavior.</p>
+        <p>Decoherence explains why superposition becomes practically unobservable at large scales — but it doesn't, by itself, solve the measurement problem covered on <a href="../weird-stuff/">The Weird Stuff</a>. Exactly how "practically unobservable" becomes "one definite outcome" is still argued about.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <footer>
   <div class="wrap footer-inner">
     <div class="footer-psi">Ψ</div>
-    <div class="footer-note">SCAFFOLD PAGE — NOT FINAL CONTENT</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
   </div>
 </footer>
 
