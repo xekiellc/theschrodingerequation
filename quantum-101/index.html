@@ -14,6 +14,28 @@
   gtag("js", new Date());
   gtag("config", "G-YPTR1K4Y5G");
 </script>
+<style>
+  .concept-full{
+    padding:72px 0;
+    border-top:1px solid var(--panel-line);
+  }
+  .concept-full:first-of-type{border-top:none;}
+  .concept-full-head{
+    display:flex; align-items:baseline; gap:20px; margin-bottom:20px; flex-wrap:wrap;
+  }
+  .concept-full-symbol{
+    font-family:'Fraunces', serif; font-size:32px; color:var(--violet);
+  }
+  .concept-full-title{
+    font-family:'Fraunces', serif; font-weight:500; font-size:clamp(22px,3vw,30px);
+    color:var(--chalk);
+  }
+  .concept-full-body{
+    max-width:640px; color:var(--chalk-dim); font-size:15.5px; line-height:1.75;
+  }
+  .concept-full-body p{margin:0 0 16px;}
+  .concept-full-body p:last-child{margin-bottom:0;}
+</style>
 </head>
 <body>
 
@@ -36,23 +58,93 @@
 <section class="page-hero">
   <div class="page-eyebrow">02 — Quantum 101</div>
   <h1 class="page-title">Six ideas that break your intuition</h1>
-  <p class="page-sub">Superposition, uncertainty, entanglement, tunneling, measurement, wave-particle duality — each with Curious / Deeper / Show Me the Math depth levels.</p>
+  <p class="page-sub">Everything downstream of the equation — quantum computing, lasers, the strangest thought experiments in physics — traces back to a handful of testable facts about the universe. Here they are, one at a time.</p>
 </section>
 
 <div class="wrap"><div class="divider"></div></div>
 
 <section>
   <div class="wrap">
-    <div class="stub-note">
-      SCAFFOLD — Planned: one page per concept, each ending in a "Keep Going" set of related links per the connections model.<br>Structure and design system are live; content is not written yet.
+
+    <div class="concept-full">
+      <div class="concept-full-head">
+        <span class="concept-full-symbol">⟩+⟨</span>
+        <span class="concept-full-title">Superposition</span>
+      </div>
+      <div class="concept-full-body">
+        <p>A quantum system doesn't have to be in one definite state before you measure it. It can be in a combination — a superposition — of multiple states at once, each with its own probability of showing up when you look.</p>
+        <p>This isn't just uncertainty about which state it's "really" in. Experiments like the double-slit show interference patterns that only make sense if the system was genuinely exploring more than one possibility at the same time — not just hiding a single answer we hadn't found yet.</p>
+        <p>Superposition is the resource quantum computers are built on: a qubit in superposition isn't a 0 or a 1, it's both, weighted by probability, until it's measured.</p>
+      </div>
     </div>
+
+    <div class="concept-full">
+      <div class="concept-full-head">
+        <span class="concept-full-symbol">Δx·Δp</span>
+        <span class="concept-full-title">Uncertainty</span>
+      </div>
+      <div class="concept-full-body">
+        <p>Heisenberg's uncertainty principle says there's a hard limit on how precisely you can simultaneously know certain pairs of properties — position and momentum, for instance. The more precisely you pin down one, the blurrier the other necessarily becomes.</p>
+        <p>This isn't a limitation of our instruments. It's not that a better microscope would fix it. The uncertainty is built into the mathematics of the wave function itself — a sharply localized particle is, by the nature of waves, spread out in momentum, and vice versa.</p>
+        <p>It's also why atoms don't collapse: an electron can't be squeezed down to a single point orbiting the nucleus, because doing so would require an impossibly large, and impossibly uncertain, momentum.</p>
+      </div>
+    </div>
+
+    <div class="concept-full">
+      <div class="concept-full-head">
+        <span class="concept-full-symbol">↯</span>
+        <span class="concept-full-title">Entanglement</span>
+      </div>
+      <div class="concept-full-body">
+        <p>Two particles can become correlated in a way that has no classical analog: measuring one instantly tells you something about the other, no matter how far apart they are. Einstein called this "spooky action at a distance" — and spent decades unconvinced it was the full story.</p>
+        <p>Entanglement doesn't let you send information faster than light — that correlation only becomes useful once you compare notes through an ordinary, light-speed channel. What it does show is that entangled particles aren't really two separate systems with hidden, independent properties. They're one system, described by one wave function, regardless of the distance between them.</p>
+        <p>Bell's theorem, and the experiments that followed it, ruled out the tidy explanation that the particles secretly agreed on their answers in advance.</p>
+      </div>
+    </div>
+
+    <div class="concept-full">
+      <div class="concept-full-head">
+        <span class="concept-full-symbol">⇥|</span>
+        <span class="concept-full-title">Tunneling</span>
+      </div>
+      <div class="concept-full-body">
+        <p>Classically, a ball without enough energy to get over a hill simply rolls back down. A quantum particle facing an equivalent energy barrier can, with some probability, appear on the other side anyway — not by going over the barrier, but by tunneling through it.</p>
+        <p>This falls directly out of the wave function's behavior: instead of dropping to exactly zero inside a barrier, it decays exponentially but stays nonzero, which means there's a real — if often tiny — chance of finding the particle on the far side.</p>
+        <p>Tunneling isn't a curiosity. It's how the sun fuses hydrogen at temperatures otherwise too low for the reaction, and it's the operating principle behind scanning tunneling microscopes and flash memory.</p>
+      </div>
+    </div>
+
+    <div class="concept-full">
+      <div class="concept-full-head">
+        <span class="concept-full-symbol">⟨ψ|</span>
+        <span class="concept-full-title">Measurement</span>
+      </div>
+      <div class="concept-full-body">
+        <p>Before you measure it, a quantum system's properties are described by probabilities spread across multiple possible outcomes. After you measure it, you get one definite answer. What happens in between — physically, not just mathematically — is one of the most contested questions in physics.</p>
+        <p>Different interpretations of quantum mechanics answer this differently: some say the wave function physically collapses; others say it never collapses at all, and every outcome happens somewhere. What's experimentally settled is only the input and the output — a spread of possibilities going in, one definite result coming out. What connects them is, honestly, still argued about.</p>
+        <p>You'll find the different answers laid out in <a href="../weird-stuff/">The Weird Stuff</a>, each labeled for what kind of claim it actually is.</p>
+      </div>
+    </div>
+
+    <div class="concept-full">
+      <div class="concept-full-head">
+        <span class="concept-full-symbol">∿ / •</span>
+        <span class="concept-full-title">Wave–Particle Duality</span>
+      </div>
+      <div class="concept-full-body">
+        <p>Light behaves like a wave in some experiments — spreading, interfering, diffracting — and like a stream of discrete particles in others, arriving one photon at a time with a definite energy. Electrons show the same split personality in reverse: solid, countable "particles" that still produce interference patterns.</p>
+        <p>The honest resolution isn't that light or matter secretly "is" one or the other. Both are quantum objects, described by a wave function, and "wave" or "particle" are just the two classical pictures that happen to match different slices of that underlying behavior.</p>
+        <p>The double-slit experiment is the clearest place to see this tension directly — sending particles through one at a time, and watching a wave-like interference pattern build up anyway.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <footer>
   <div class="wrap footer-inner">
     <div class="footer-psi">Ψ</div>
-    <div class="footer-note">SCAFFOLD PAGE — NOT FINAL CONTENT</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
   </div>
 </footer>
 
