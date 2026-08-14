@@ -14,6 +14,32 @@
   gtag("js", new Date());
   gtag("config", "G-YPTR1K4Y5G");
 </script>
+<style>
+  .entry{
+    padding:64px 0;
+    border-top:1px solid var(--panel-line);
+  }
+  .entry:first-of-type{border-top:none;}
+  .entry-head{margin-bottom:20px; display:flex; align-items:baseline; gap:16px; flex-wrap:wrap;}
+  .entry-year{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.06em;
+    color:var(--chalk-dim);
+  }
+  .entry-title{
+    font-family:'Fraunces', serif; font-weight:500; font-size:clamp(22px,3vw,30px);
+    color:var(--chalk); margin:8px 0 0;
+  }
+  .entry-body{
+    max-width:640px; color:var(--chalk-dim); font-size:15.5px; line-height:1.75;
+  }
+  .entry-body p{margin:0 0 16px;}
+  .entry-body p:last-child{margin-bottom:0;}
+  .lab-note{
+    margin-top:24px; padding:16px 20px; max-width:640px;
+    background:var(--panel); border:1px solid var(--panel-line); border-radius:10px;
+    font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chalk-dim); line-height:1.6;
+  }
+</style>
 </head>
 <body>
 
@@ -36,23 +62,89 @@
 <section class="page-hero">
   <div class="page-eyebrow">03 — The Experiments</div>
   <h1 class="page-title">What nature actually does</h1>
-  <p class="page-sub">The experiments that forced physicists to accept the strangeness — including an interactive double-slit exhibit.</p>
+  <p class="page-sub">The ideas in <a href="../quantum-101/">Quantum 101</a> aren't philosophy — they're forced on us by results like these. Every experiment on this page is <span class="tag tag-established" style="vertical-align:middle;">Established</span>: repeated, verified, and not seriously in dispute.</p>
 </section>
 
 <div class="wrap"><div class="divider"></div></div>
 
 <section>
   <div class="wrap">
-    <div class="stub-note">
-      SCAFFOLD — Planned: double-slit interactive (fire particles, toggle which-path detection), Stern–Gerlach, Bell tests, photoelectric effect, quantum eraser, delayed choice.<br>Structure and design system are live; content is not written yet.
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-year">1801 (light) · 1961 (electrons) · ongoing (single particles)</div>
+          <h2 class="entry-title">The Double-Slit Experiment</h2>
+        </div>
+      </div>
+      <div class="entry-body">
+        <p>Fire particles — photons, electrons, even large molecules — at a barrier with two narrow slits, and let them land on a screen behind it. If particles behaved classically, you'd see two bright bands, one behind each slit. Instead, you get an interference pattern: alternating bright and dark stripes, the signature of a wave passing through both slits at once and interfering with itself.</p>
+        <p>The strange part isn't the pattern — it's what happens when you send particles through one at a time. Individually, each particle lands at a single point, like a particle should. But over thousands of individual, isolated arrivals, the interference pattern builds up anyway. Whatever each particle is doing, it isn't simply "going through one slit or the other."</p>
+        <p>Add a detector that determines which slit each particle actually went through, and the interference pattern disappears — you get the two classical bands back. Gaining which-path information destroys the wave behavior. This single result carries most of the weight behind superposition and wave–particle duality.</p>
+      </div>
+      <div class="lab-note">An interactive version of this experiment — fire particles yourself, toggle the detector, watch the pattern build and collapse — is planned for a future build of this site.</div>
     </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-year">1922</div>
+          <h2 class="entry-title">The Stern–Gerlach Experiment</h2>
+        </div>
+      </div>
+      <div class="entry-body">
+        <p>Send a beam of silver atoms through an uneven magnetic field and let them land on a plate. Classically, the atoms' magnetic orientation should be random and continuous, producing a smeared-out band on the plate. Otto Stern and Walther Gerlach instead found two distinct spots — the atoms were deflected one of exactly two ways, never in between.</p>
+        <p>This was early, direct evidence that some quantum properties — here, what we now call spin — are quantized: they don't take a continuous range of values, only a discrete set. It's one of the cleanest demonstrations that the quantum world doesn't just add small corrections to classical physics; it replaces continuous possibility with discrete outcomes.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-year">1972–present</div>
+          <h2 class="entry-title">Bell Tests</h2>
+        </div>
+      </div>
+      <div class="entry-body">
+        <p>John Bell showed in 1964 that any theory obeying both locality and realism — no faster-than-light influence, and definite properties that exist prior to measurement — must satisfy a specific statistical inequality. Quantum mechanics predicts that entangled particles violate it.</p>
+        <p>Starting with Freedman and Clauser in 1972, and refined for decades since — most decisively by Alain Aspect and collaborators, who closed the remaining loopholes by the 2010s — every Bell test performed has sided with quantum mechanics and against the inequality. Aspect, along with John Clauser and Anton Zeilinger, shared the 2022 Nobel Prize in Physics for this body of work.</p>
+        <p>This is the experimental backbone behind entanglement and behind the open question <a href="../weird-stuff/">"does reality exist before we look at it?"</a> — at least one of locality or realism has to give, and the data leaves no comfortable third option.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-year">1887 (observed) · 1905 (explained)</div>
+          <h2 class="entry-title">The Photoelectric Effect</h2>
+        </div>
+      </div>
+      <div class="entry-body">
+        <p>Shine light on certain metals and they emit electrons — but not in the way 19th-century wave theory predicted. Dimmer light doesn't reduce each electron's energy, only how many are emitted; and below a certain light frequency, no electrons come out at all, no matter how bright the light is.</p>
+        <p>Einstein explained this in 1905 by proposing that light itself arrives in discrete packets — photons — each carrying energy proportional to its frequency. A photon below the threshold frequency simply doesn't have enough energy to knock an electron loose, regardless of how many photons (how bright the light) you send. This was the first strong evidence that light isn't purely a wave, and it's the work Einstein's Nobel Prize was actually awarded for.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div>
+          <div class="entry-year">1927 (original) · 1982 onward (quantum eraser variants)</div>
+          <h2 class="entry-title">The Quantum Eraser</h2>
+        </div>
+      </div>
+      <div class="entry-body">
+        <p>Building on the double-slit result: if marking which slit a particle went through destroys the interference pattern, what happens if you mark the path but then erase that information before looking at where the particle landed? Quantum eraser experiments show that the interference pattern comes back — not by changing anything about the particle's original path, but by removing the which-path information from the system entirely.</p>
+        <p>The "delayed-choice" versions go further: the decision to erase the path information can be made after the particle has already hit the detector screen, and the statistics still show interference once the erasure is confirmed. This doesn't let you send information backward in time — you only see the pattern by sorting the data afterward — but it does show that what matters is whether which-path information exists anywhere in the universe, not when it's read.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <footer>
   <div class="wrap footer-inner">
     <div class="footer-psi">Ψ</div>
-    <div class="footer-note">SCAFFOLD PAGE — NOT FINAL CONTENT</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
   </div>
 </footer>
 
