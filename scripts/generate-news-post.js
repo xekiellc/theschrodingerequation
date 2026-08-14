@@ -28,16 +28,26 @@ const GA_SNIPPET = `<script async src="https://www.googletagmanager.com/gtag/js?
 
 async function main() {
   const state = loadState();
-  const papers = await fetchNewArxivPapers(state.lastSeenId);
+  const { newPapers, newestId } = await fetchNewArxivPapers(state.lastSeenId);
 
-  if (papers.length === 0) {
+  // Always ensure the state directory exists and record the newest seen ID,
+  // even when there's nothing to publish — this is what makes the *next*
+  // run able to detect what's actually new, and guarantees content/news/
+  // exists in the repo so the workflow's git add step never fails on a
+  // missing path.
+  if (newestId) {
+    state.lastSeenId = newestId;
+  }
+  saveState(state);
+
+  if (newPapers.length === 0) {
     console.log("No new quant-ph papers since last check. Nothing to publish.");
     return;
   }
 
   // Only ever publish one post per run, even if several papers came in —
   // keeps quality high over quantity, and avoids a backlog dump.
-  const paper = papers[0];
+  const paper = newPapers[0];
   console.log(`New paper found: ${paper.title}`);
 
   const post = await synthesizePost(paper);
@@ -45,7 +55,6 @@ async function main() {
   writePostPage(slug, post, paper);
   appendToIndex(slug, post, paper);
 
-  state.lastSeenId = paper.id;
   state.publishedSlugs = state.publishedSlugs || [];
   state.publishedSlugs.push(slug);
   saveState(state);
@@ -75,19 +84,21 @@ async function fetchNewArxivPapers(lastSeenId) {
   const res = await fetch(url);
   const xml = await res.text();
   const entries = parseArxivEntries(xml);
+  const newestId = entries.length > 0 ? entries[0].id : null;
 
   if (!lastSeenId) {
-    // First-ever run: don't dump the last 5 papers at once, just record the
-    // most recent as the baseline and publish nothing this run.
-    return entries.length > 0 ? [] : [];
+    // First-ever run: don't dump the last 5 papers at once. Just record the
+    // most recent as the baseline (handled by the caller) and publish
+    // nothing this run.
+    return { newPapers: [], newestId };
   }
 
-  const newEntries = [];
+  const newPapers = [];
   for (const entry of entries) {
     if (entry.id === lastSeenId) break;
-    newEntries.push(entry);
+    newPapers.push(entry);
   }
-  return newEntries;
+  return { newPapers, newestId };
 }
 
 function parseArxivEntries(xml) {
