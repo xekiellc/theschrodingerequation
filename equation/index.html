@@ -14,6 +14,31 @@
   gtag("js", new Date());
   gtag("config", "G-YPTR1K4Y5G");
 </script>
+<style>
+  .display-eq{
+    font-family:'Fraunces', serif; font-size:clamp(22px,4vw,36px); text-align:center;
+    color:var(--chalk); margin:36px 0; letter-spacing:0.01em;
+  }
+  .entry{ padding:56px 0; border-top:1px solid var(--panel-line); }
+  .entry:first-of-type{border-top:none;}
+  .entry-title{
+    font-family:'Fraunces', serif; font-weight:500; font-size:clamp(20px,2.6vw,26px);
+    color:var(--chalk); margin:0 0 18px;
+  }
+  .entry-body{ max-width:640px; color:var(--chalk-dim); font-size:15.5px; line-height:1.75; }
+  .entry-body p{margin:0 0 16px;}
+  .entry-body p:last-child{margin-bottom:0;}
+  .symbol-table{
+    max-width:640px; border:1px solid var(--panel-line); border-radius:10px; overflow:hidden; margin-top:8px;
+  }
+  .symbol-row{
+    display:grid; grid-template-columns:70px 1fr; gap:16px;
+    padding:14px 20px; border-top:1px solid var(--panel-line);
+  }
+  .symbol-row:first-child{border-top:none;}
+  .symbol-glyph{font-family:'Fraunces', serif; font-size:20px; color:var(--violet);}
+  .symbol-desc{font-size:14px; color:var(--chalk-dim); line-height:1.55;}
+</style>
 </head>
 <body>
 
@@ -36,23 +61,66 @@
 <section class="page-hero">
   <div class="page-eyebrow">01 — The Equation</div>
   <h1 class="page-title">What the equation actually says</h1>
-  <p class="page-sub">Symbol by symbol, form by form: the time-dependent and time-independent Schrödinger equation, worked from first principles.</p>
+  <p class="page-sub">The version on the homepage is the time-dependent Schrödinger equation. It's a single statement — but every symbol in it is doing real work. Here's what each piece means, and where the equation goes from here.</p>
 </section>
 
 <div class="wrap"><div class="divider"></div></div>
 
 <section>
   <div class="wrap">
-    <div class="stub-note">
-      SCAFFOLD — Planned: Start Here, What is Ψ?, Probability and |Ψ|², The Hamiltonian, Time evolution, Stationary states, Particle in a box, Harmonic oscillator, Tunneling, Solve It Yourself.<br>Structure and design system are live; content is not written yet.
+
+    <div class="entry">
+      <h2 class="entry-title">The Time-Dependent Form</h2>
+      <div class="entry-body">
+        <p>This is the equation as it appears on the homepage — the general rule for how a quantum system's wave function changes moment to moment:</p>
+      </div>
+      <div class="display-eq">iℏ ∂Ψ(r,t)/∂t = Ĥ Ψ(r,t)</div>
+      <div class="entry-body">
+        <p>Read left to right: the rate of change of the wave function over time (∂Ψ/∂t), scaled by iℏ, equals the Hamiltonian operator (Ĥ) acting on that same wave function. It's not solving for a number — it's a rule that, given the wave function right now, tells you the wave function an instant later. Apply it continuously, and you get the system's entire evolution through time.</p>
+      </div>
+      <div class="symbol-table">
+        <div class="symbol-row"><span class="symbol-glyph">i</span><span class="symbol-desc">The imaginary unit. Without it, this equation would describe simple decay, not oscillation — i is what lets Ψ rotate through phase rather than just shrink.</span></div>
+        <div class="symbol-row"><span class="symbol-glyph">ℏ</span><span class="symbol-desc">Reduced Planck's constant — the fundamental scale of quantum action. Tiny in everyday units, which is why quantum effects are invisible at ordinary scales.</span></div>
+        <div class="symbol-row"><span class="symbol-glyph">Ψ(r,t)</span><span class="symbol-desc">The wave function itself — a complex-valued function whose squared magnitude, |Ψ|², gives the probability of finding the particle at position r and time t.</span></div>
+        <div class="symbol-row"><span class="symbol-glyph">Ĥ</span><span class="symbol-desc">The Hamiltonian — the total energy operator, combining kinetic and potential energy. It's what actually drives the system's evolution.</span></div>
+      </div>
     </div>
+
+    <div class="entry">
+      <h2 class="entry-title">The Time-Independent Form</h2>
+      <div class="entry-body">
+        <p>Many of the systems worth solving — an electron in an atom, a particle in a box — settle into states whose probability distribution, |Ψ|², doesn't change over time, even though the wave function's phase still does. These are called stationary states, and they satisfy a simpler version of the equation:</p>
+      </div>
+      <div class="display-eq">Ĥ ψ = E ψ</div>
+      <div class="entry-body">
+        <p>This is an eigenvalue equation: apply the Hamiltonian to ψ, and you get the same ψ back, scaled by a number E — the system's energy. Solving this equation for a given potential tells you exactly which energies the system is allowed to have, and what its wave function looks like at each one. The full time-dependent solution can always be built by combining these stationary states.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <h2 class="entry-title">A Worked Example: The Particle in a Box</h2>
+      <div class="entry-body">
+        <p>The simplest system you can solve exactly is a particle confined to a region of space it can't escape — infinite walls on either side, zero potential in between. Solving Ĥψ = Eψ for this setup gives a striking result: the particle can't have just any energy. Only a discrete set of energies are allowed, indexed by a whole number n = 1, 2, 3…</p>
+        <p>Each allowed energy corresponds to a wave function that looks like a standing wave — the same shape you'd get from a vibrating guitar string fixed at both ends, with n − 1 points where the wave function crosses zero. This is quantization falling directly out of the mathematics, not imposed on it: confine a wave, and only certain shapes fit.</p>
+        <p>It's a toy model, but the same logic — solve for the allowed standing waves — is what eventually gives you the discrete energy levels of a real hydrogen atom.</p>
+      </div>
+    </div>
+
+    <div class="entry">
+      <h2 class="entry-title">What the Equation Can't Describe</h2>
+      <div class="entry-body">
+        <p>The Schrödinger equation is non-relativistic — it assumes particles move much slower than light, and it has no mechanism for particles being created or destroyed. That's fine for chemistry, atomic physics, and most of what shows up in <a href="../quantum-101/">Quantum 101</a>, but it breaks down at high energies, where relativistic effects and particle creation matter. What replaces it there is covered on <a href="../frontier/">The Frontier</a>.</p>
+        <p>The equation also doesn't say what "measurement" physically is, or resolve why a spread of possibilities becomes one definite outcome. That gap — the measurement problem — is covered honestly on <a href="../weird-stuff/">The Weird Stuff</a>, labeled for exactly the kind of open question it is.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <footer>
   <div class="wrap footer-inner">
     <div class="footer-psi">Ψ</div>
-    <div class="footer-note">SCAFFOLD PAGE — NOT FINAL CONTENT</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
   </div>
 </footer>
 
