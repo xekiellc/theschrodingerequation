@@ -1,6 +1,7 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2608.14544v1",
+  "lastSeenId": "http://arxiv.org/abs/2608.16860v1",
   "publishedSlugs": [
-    "gpu-implementation-of-mixed-quantum-classical-liouville-mole"
+    "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
+    "classical-adversarial-fault-tolerance-and-pcps"
   ]
 }
