@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2608.27211v1",
+  "lastSeenId": "http://arxiv.org/abs/2608.27457v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -10,6 +10,7 @@
     "dissipation-induced-sachdev-ye-kitaev-physics-in-many-body-c",
     "dynamical-consequences-of-nontrivial-topology-of-molecular-c",
     "exact-analytical-spectrum-eigenstates-and-quantum-geometry-o",
-    "the-find-rows-and-columns-and-decode-algorithm-for-quantum-e"
+    "the-find-rows-and-columns-and-decode-algorithm-for-quantum-e",
+    "spectral-fingerprints-of-gauge-theories-on-a-quantum-compute"
   ]
 }
