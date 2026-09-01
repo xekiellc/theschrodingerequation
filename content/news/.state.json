@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2608.28577v1",
+  "lastSeenId": "http://arxiv.org/abs/2608.30660v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -13,6 +13,7 @@
     "the-find-rows-and-columns-and-decode-algorithm-for-quantum-e",
     "spectral-fingerprints-of-gauge-theories-on-a-quantum-compute",
     "input-output-analysis-of-quantum-dot-super-excitation",
-    "how-long-range-tails-reshape-non-hermitian-spectra"
+    "how-long-range-tails-reshape-non-hermitian-spectra",
+    "trade-off-between-cooling-step-count-and-geometric-implement"
   ]
 }
