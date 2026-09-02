@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.01145v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.01606v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -16,6 +16,7 @@
     "how-long-range-tails-reshape-non-hermitian-spectra",
     "trade-off-between-cooling-step-count-and-geometric-implement",
     "quantum-simulation-of-markovian-and-non-markovian-open-quant",
-    "direct-laser-written-optomechanical-double-membranes-in-an-o"
+    "direct-laser-written-optomechanical-double-membranes-in-an-o",
+    "observable-and-state-selective-prethermalization-and-bounds-"
   ]
 }
