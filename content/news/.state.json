@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.01606v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.02593v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -17,6 +17,7 @@
     "trade-off-between-cooling-step-count-and-geometric-implement",
     "quantum-simulation-of-markovian-and-non-markovian-open-quant",
     "direct-laser-written-optomechanical-double-membranes-in-an-o",
-    "observable-and-state-selective-prethermalization-and-bounds-"
+    "observable-and-state-selective-prethermalization-and-bounds-",
+    "the-advantages-of-extended-nonreciprocal-quantum-batteries"
   ]
 }
