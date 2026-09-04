@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.03928v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.04182v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -20,6 +20,7 @@
     "observable-and-state-selective-prethermalization-and-bounds-",
     "the-advantages-of-extended-nonreciprocal-quantum-batteries",
     "a-quantum-oracle-separation-between-qma-2-and-qma",
-    "approximate-maximum-likelihood-decoding-via-truncated-free-e"
+    "approximate-maximum-likelihood-decoding-via-truncated-free-e",
+    "quantum-communication-and-bell-nonlocality-require-infinite-"
   ]
 }
