@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hybrid quantum head fine-tunes time-series model for grid classification — The Schrödinger Equation</title>
+<meta name="description" content="A 'wing module' design shows quantum circuit scaling helps only when extra qubits carry new information, not merely more parameters.">
+<link rel="canonical" href="https://theschrodingerequation.com/news/towards-scaling-quantum-fine-tuning-of-foundational-time-ser/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTR1K4Y5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YPTR1K4Y5G");
+</script>
+<style>
+  .post-body{ max-width:640px; margin:0 auto; color:var(--chalk-dim); font-size:15.5px; line-height:1.75; }
+  .post-body p{margin:0 0 16px;}
+  .post-meta{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chalk-dim); margin-bottom:32px; }
+  .post-source{ text-align:center; margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:12px; }
+  .post-source a{ color:var(--teal); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../../" class="brand"><span class="psi">Ψ</span><span class="psi-sq">|Ψ|²</span> THE SCHRÖDINGER EQUATION</a>
+    <nav class="links">
+      <a href="../../equation/">Equation</a>
+      <a href="../../quantum-101/">Concepts</a>
+      <a href="../../weird-stuff/">Weird Stuff</a>
+      <a href="../../experiments/">Experiments</a>
+      <a href="../../people/">People</a>
+      <a href="../../applications/">Applications</a>
+      <a href="../../frontier/">Frontier</a>
+      <a href="../../news/">News</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-eyebrow"><span class="tag tag-thought">Preprint — Not Peer-Reviewed</span></div>
+  <h1 class="page-title">Hybrid quantum head fine-tunes time-series model for grid classification</h1>
+  <p class="page-sub">A 'wing module' design shows quantum circuit scaling helps only when extra qubits carry new information, not merely more parameters.</p>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="post-meta">September 4, 2026</div>
+    <div class="post-body"><p>An unreviewed preprint posted to arXiv investigates whether quantum models can usefully exploit the embeddings produced by classical time-series foundation models. The authors fine-tune Chronos — a large pre-trained time-series model — for power-grid event classification on the PSML-5 benchmark, attaching a quantum circuit as a classification head to the model's frozen embeddings. They report that grouping embeddings by physical sensor type before feeding them to the quantum head already exceeds the best published baseline for that benchmark, and that a 12-qubit quantum head outperforms a larger classical multilayer perceptron on identical inputs by 1.7–2.0 percentage points of balanced accuracy.</p><p>The central finding concerns how performance saturates. The authors argue the bottleneck is not circuit expressiveness or information availability, but what they call 'data-intake bandwidth': a fixed-width quantum register cannot absorb additional useful information beyond a certain point, so simply deepening or widening the circuit without supplying new inputs yields no gain. To address this, they introduce a 'wing module' — a small, few-qubit subcircuit coupled to the core register in a sparse, one-directional fashion. Under a preregistered four-seed experimental protocol, attaching wings that carry genuinely new input features raises balanced accuracy from 83.6% (13 qubits, no wings) to 85.2% (19 qubits, two wings). Ablations show that enlarging the circuit without new information produces no improvement, and that wings supplied with data from incorrect samples actively harm accuracy.</p><p>The authors frame their result as a conceptual reorientation for quantum fine-tuning: qubit count matters only insofar as additional qubits encode additional inputs. The wing architecture is presented as a modular, stable mechanism for incrementally widening that intake. As an unreviewed preprint, these claims have not yet undergone peer scrutiny, and the absolute accuracy figures pertain to a single, specialized benchmark; generalization to other tasks or quantum hardware remains to be established.</p></div>
+    <div class="post-source">Source: <a href="http://arxiv.org/abs/2609.05408v1" target="_blank" rel="noopener">http://arxiv.org/abs/2609.05408v1</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-psi">Ψ</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
+  </div>
+</footer>
+
+</body>
+</html>

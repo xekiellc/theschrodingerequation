@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.05322v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.05408v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -22,6 +22,7 @@
     "a-quantum-oracle-separation-between-qma-2-and-qma",
     "approximate-maximum-likelihood-decoding-via-truncated-free-e",
     "quantum-communication-and-bell-nonlocality-require-infinite-",
-    "restricting-the-effects-hides-a-nonphysical-symmetry-from-ev"
+    "restricting-the-effects-hides-a-nonphysical-symmetry-from-ev",
+    "towards-scaling-quantum-fine-tuning-of-foundational-time-ser"
   ]
 }
