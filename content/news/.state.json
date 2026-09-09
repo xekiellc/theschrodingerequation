@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.06528v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.09147v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -24,6 +24,7 @@
     "quantum-communication-and-bell-nonlocality-require-infinite-",
     "restricting-the-effects-hides-a-nonphysical-symmetry-from-ev",
     "towards-scaling-quantum-fine-tuning-of-foundational-time-ser",
-    "low-depth-random-unitaries-without-ancillae"
+    "low-depth-random-unitaries-without-ancillae",
+    "green-s-functions-from-sample-based-krylov-quantum-diagonali"
   ]
 }
