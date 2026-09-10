@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.10342v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.10535v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -26,6 +26,7 @@
     "towards-scaling-quantum-fine-tuning-of-foundational-time-ser",
     "low-depth-random-unitaries-without-ancillae",
     "green-s-functions-from-sample-based-krylov-quantum-diagonali",
-    "quench-dynamics-in-nonreciprocal-aubry-andr-harper-model"
+    "quench-dynamics-in-nonreciprocal-aubry-andr-harper-model",
+    "for-whom-does-bell-hold"
   ]
 }
