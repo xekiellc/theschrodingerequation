@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.11637v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.11930v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -28,6 +28,7 @@
     "green-s-functions-from-sample-based-krylov-quantum-diagonali",
     "quench-dynamics-in-nonreciprocal-aubry-andr-harper-model",
     "for-whom-does-bell-hold",
-    "certifying-adversarial-robustness-of-quantum-classifiers-und"
+    "certifying-adversarial-robustness-of-quantum-classifiers-und",
+    "hierarchy-of-r-nyi-coherent-information-in-stabilizer-codes"
   ]
 }
