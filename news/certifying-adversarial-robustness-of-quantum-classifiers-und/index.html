@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Framework certifies adversarial robustness of quantum classifiers from measurement statistics alone — The Schrödinger Equation</title>
+<meta name="description" content="A preprint proposes complementary lower and upper robustness bounds for quantum classifiers, requiring only finite-shot readout data—no circuit internals.">
+<link rel="canonical" href="https://theschrodingerequation.com/news/certifying-adversarial-robustness-of-quantum-classifiers-und/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTR1K4Y5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YPTR1K4Y5G");
+</script>
+<style>
+  .post-body{ max-width:640px; margin:0 auto; color:var(--chalk-dim); font-size:15.5px; line-height:1.75; }
+  .post-body p{margin:0 0 16px;}
+  .post-meta{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chalk-dim); margin-bottom:32px; }
+  .post-source{ text-align:center; margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:12px; }
+  .post-source a{ color:var(--teal); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../../" class="brand"><span class="psi">Ψ</span><span class="psi-sq">|Ψ|²</span> THE SCHRÖDINGER EQUATION</a>
+    <nav class="links">
+      <a href="../../equation/">Equation</a>
+      <a href="../../quantum-101/">Concepts</a>
+      <a href="../../weird-stuff/">Weird Stuff</a>
+      <a href="../../experiments/">Experiments</a>
+      <a href="../../people/">People</a>
+      <a href="../../applications/">Applications</a>
+      <a href="../../frontier/">Frontier</a>
+      <a href="../../news/">News</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-eyebrow"><span class="tag tag-thought">Preprint — Not Peer-Reviewed</span></div>
+  <h1 class="page-title">Framework certifies adversarial robustness of quantum classifiers from measurement statistics alone</h1>
+  <p class="page-sub">A preprint proposes complementary lower and upper robustness bounds for quantum classifiers, requiring only finite-shot readout data—no circuit internals.</p>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="post-meta">September 10, 2026</div>
+    <div class="post-body"><p>A preprint posted to arXiv (not yet peer-reviewed) introduces a measurement-only framework for auditing the adversarial robustness of quantum classifiers without access to circuit parameters, internal evolution, or gradients. Working under what the authors call known-readout query access (KRQA)—where an evaluator knows the measurement operator and observes sampled outcomes but nothing more—the method produces two complementary certificates per input: a lower bound guaranteeing no untargeted misclassification within a specified radius, and an upper bound constructing a witness adversarial state within a (potentially larger) radius.</p><p>The lower bound is computed by relaxing a state-space search into an optimization over outcome distributions subject to operator-spectrum constraints. The authors claim this is never weaker than prior certificates that use probability statistics alone, and can be strictly stronger when spectral constraints are binding. The upper bound exploits gap operators derived from the known quantum measurement, and is designed to remain informative in regimes where conventional gradient-based attacks fail. Neither certificate requires quantum state tomography or knowledge of the classifier's internal architecture.</p><p>The authors evaluate the framework on several quantum classifiers and report real-device experiments on IBM Quantum hardware: from 40 executions each of two 8-qubit quantum neural networks, both certificates were computed, with the expected ordering (lower bound ≤ upper bound) holding on every tested input. If the approach survives peer review, it would offer a practical path toward independently auditing robustness claims for quantum classifiers purely from observable statistics—an important property given that deployed quantum models are unlikely to expose their internal representations to external evaluators.</p></div>
+    <div class="post-source">Source: <a href="http://arxiv.org/abs/2609.11637v1" target="_blank" rel="noopener">http://arxiv.org/abs/2609.11637v1</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-psi">Ψ</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
+  </div>
+</footer>
+
+</body>
+</html>
