@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.24508v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.24993v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -30,6 +30,7 @@
     "for-whom-does-bell-hold",
     "certifying-adversarial-robustness-of-quantum-classifiers-und",
     "hierarchy-of-r-nyi-coherent-information-in-stabilizer-codes",
-    "statistical-mechanics-of-multipartite-entanglement-in-hyperg"
+    "statistical-mechanics-of-multipartite-entanglement-in-hyperg",
+    "quantum-mpemba-effect-from-stark-localization"
   ]
 }
