@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New algorithms cut gate costs for simulating open quantum systems on hardware — The Schrödinger Equation</title>
+<meta name="description" content="A preprint claims near-optimal quantum simulation of lattice Lindbladians by exploiting locality via two new techniques.">
+<link rel="canonical" href="https://theschrodingerequation.com/news/lattice-lindbladian-simulation-by-patching-and-merging/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTR1K4Y5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YPTR1K4Y5G");
+</script>
+<style>
+  .post-body{ max-width:640px; margin:0 auto; color:var(--chalk-dim); font-size:15.5px; line-height:1.75; }
+  .post-body p{margin:0 0 16px;}
+  .post-meta{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chalk-dim); margin-bottom:32px; }
+  .post-source{ text-align:center; margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:12px; }
+  .post-source a{ color:var(--teal); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../../" class="brand"><span class="psi">Ψ</span><span class="psi-sq">|Ψ|²</span> THE SCHRÖDINGER EQUATION</a>
+    <nav class="links">
+      <a href="../../equation/">Equation</a>
+      <a href="../../quantum-101/">Concepts</a>
+      <a href="../../weird-stuff/">Weird Stuff</a>
+      <a href="../../experiments/">Experiments</a>
+      <a href="../../people/">People</a>
+      <a href="../../applications/">Applications</a>
+      <a href="../../frontier/">Frontier</a>
+      <a href="../../news/">News</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-eyebrow"><span class="tag tag-thought">Preprint — Not Peer-Reviewed</span></div>
+  <h1 class="page-title">New algorithms cut gate costs for simulating open quantum systems on hardware</h1>
+  <p class="page-sub">A preprint claims near-optimal quantum simulation of lattice Lindbladians by exploiting locality via two new techniques.</p>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="post-meta">September 22, 2026</div>
+    <div class="post-body"><p>Simulating how open quantum systems evolve—systems that exchange energy or information with their environment and are described by so-called Lindbladians rather than simple Hamiltonians—is considerably harder than simulating closed quantum systems. While Hamiltonian simulation has reached near-optimal gate counts in recent years, comparable efficiency for dissipative dynamics has lagged behind. An unreviewed preprint posted to arXiv proposes quantum algorithms that close much of that gap by systematically exploiting the spatial locality of lattice Lindbladians.</p><p>The authors introduce two core techniques. "Patching" decomposes the full dissipative evolution into dynamics on smaller subsystems, incurring only exponentially small errors—generalizing an idea from the Haah–Hastings–Kothari–Low algorithm for Hamiltonian simulation. "Merging" reduces the overhead of quasi-probabilistic sampling by absorbing reversed dissipative segments into adjacent parts of the circuit. For sparsely dissipative systems such as boundary-driven lattices, the paper claims a near-optimal gate count scaling as O(Nt polylog(Nt/ε)). For generic finite-range lattice Lindbladians, it claims O((Nt)^{4/3} polylog(Nt/ε)) gates per sample—the smallest known system-size dependence among algorithms that keep error-precision costs polylogarithmic.</p><p>This is an arXiv preprint and has not yet undergone peer review; the complexity claims and proof techniques should be treated as preliminary until independently verified. If the results hold, they would represent a significant step toward practical quantum simulation of nonequilibrium phenomena such as thermalization, driven-dissipative phase transitions, and dissipatively prepared quantum states.</p></div>
+    <div class="post-source">Source: <a href="http://arxiv.org/abs/2609.26372v1" target="_blank" rel="noopener">http://arxiv.org/abs/2609.26372v1</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-psi">Ψ</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
+  </div>
+</footer>
+
+</body>
+</html>
