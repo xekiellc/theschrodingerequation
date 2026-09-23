@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.26372v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.26788v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -32,6 +32,7 @@
     "hierarchy-of-r-nyi-coherent-information-in-stabilizer-codes",
     "statistical-mechanics-of-multipartite-entanglement-in-hyperg",
     "quantum-mpemba-effect-from-stark-localization",
-    "lattice-lindbladian-simulation-by-patching-and-merging"
+    "lattice-lindbladian-simulation-by-patching-and-merging",
+    "quantum-advantage-for-distributed-symmetry-breaking"
   ]
 }
