@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.27993v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.28469v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -34,6 +34,7 @@
     "quantum-mpemba-effect-from-stark-localization",
     "lattice-lindbladian-simulation-by-patching-and-merging",
     "quantum-advantage-for-distributed-symmetry-breaking",
-    "spectral-gap-of-the-hexagonal-aklt-model-via-boundary-state-"
+    "spectral-gap-of-the-hexagonal-aklt-model-via-boundary-state-",
+    "compressed-permutation-oracles-revisited"
   ]
 }
