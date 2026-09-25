@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.28469v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.30268v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -35,6 +35,7 @@
     "lattice-lindbladian-simulation-by-patching-and-merging",
     "quantum-advantage-for-distributed-symmetry-breaking",
     "spectral-gap-of-the-hexagonal-aklt-model-via-boundary-state-",
-    "compressed-permutation-oracles-revisited"
+    "compressed-permutation-oracles-revisited",
+    "quantum-channel-stein-theorem-beyond-definite-causal-order"
   ]
 }
