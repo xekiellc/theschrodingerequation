@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.30268v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.31609v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -36,6 +36,7 @@
     "quantum-advantage-for-distributed-symmetry-breaking",
     "spectral-gap-of-the-hexagonal-aklt-model-via-boundary-state-",
     "compressed-permutation-oracles-revisited",
-    "quantum-channel-stein-theorem-beyond-definite-causal-order"
+    "quantum-channel-stein-theorem-beyond-definite-causal-order",
+    "exact-series-formulas-for-the-capacities-of-the-amplitude-da"
   ]
 }
