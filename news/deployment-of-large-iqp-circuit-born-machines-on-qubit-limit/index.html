@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noise injection enables large IQP Born machines to run on smaller quantum hardware — The Schrödinger Equation</title>
+<meta name="description" content="A proposed protocol deploys 316-qubit IQP circuits on 156-qubit IBM Heron hardware by probabilistically decomposing circuits via deliberate noise.">
+<link rel="canonical" href="https://theschrodingerequation.com/news/deployment-of-large-iqp-circuit-born-machines-on-qubit-limit/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTR1K4Y5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YPTR1K4Y5G");
+</script>
+<style>
+  .post-body{ max-width:640px; margin:0 auto; color:var(--chalk-dim); font-size:15.5px; line-height:1.75; }
+  .post-body p{margin:0 0 16px;}
+  .post-meta{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chalk-dim); margin-bottom:32px; }
+  .post-source{ text-align:center; margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:12px; }
+  .post-source a{ color:var(--teal); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../../" class="brand"><span class="psi">Ψ</span><span class="psi-sq">|Ψ|²</span> THE SCHRÖDINGER EQUATION</a>
+    <nav class="links">
+      <a href="../../equation/">Equation</a>
+      <a href="../../quantum-101/">Concepts</a>
+      <a href="../../weird-stuff/">Weird Stuff</a>
+      <a href="../../experiments/">Experiments</a>
+      <a href="../../people/">People</a>
+      <a href="../../applications/">Applications</a>
+      <a href="../../frontier/">Frontier</a>
+      <a href="../../news/">News</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-eyebrow"><span class="tag tag-thought">Preprint — Not Peer-Reviewed</span></div>
+  <h1 class="page-title">Noise injection enables large IQP Born machines to run on smaller quantum hardware</h1>
+  <p class="page-sub">A proposed protocol deploys 316-qubit IQP circuits on 156-qubit IBM Heron hardware by probabilistically decomposing circuits via deliberate noise.</p>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="post-meta">September 28, 2026</div>
+    <div class="post-body"><p>An unreviewed preprint posted to arXiv proposes a method for running quantum circuit Born machines (QCBMs) built from instantaneous quantum polynomial (IQP) circuits on quantum hardware with fewer qubits than the model requires. The central insight is that deliberately injecting noise at the logical level can probabilistically break a large IQP circuit into smaller clusters, each executable on a qubit-limited device. Because IQP QCBM loss functions can be estimated classically, large models can be trained on classical hardware even when no quantum processor of sufficient size exists — the bottleneck addressed here is inference-time sampling.</p><p>The authors pair this noise-injection decomposition with a lightweight resampling step that targets known noisy qubits, partially compensating for errors the injection introduces. Numerical simulations on shallow IQP QCBMs, along with experiments on IBM Heron hardware deploying a 316-qubit circuit onto a 156-qubit processor, are reported to show that this mitigation step improves how closely the sampled distribution matches the target. Importantly, the paper claims the protocol preserves multi-qubit correlation structure better than a classical baseline that correctly reproduces single-qubit marginals — a distinction that matters for generative modeling tasks where correlations carry the useful information.</p><p>The work sits at the intersection of quantum machine learning and near-term hardware constraints, and the experimental component is notable for its scale. However, as with all arXiv preprints, these results have not yet undergone peer review, and independent verification of the performance claims — particularly the correlation-preservation advantage over classical alternatives — remains to be established.</p></div>
+    <div class="post-source">Source: <a href="http://arxiv.org/abs/2609.35163v1" target="_blank" rel="noopener">http://arxiv.org/abs/2609.35163v1</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-psi">Ψ</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
+  </div>
+</footer>
+
+</body>
+</html>
