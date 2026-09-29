@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.35163v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.35722v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -38,6 +38,7 @@
     "compressed-permutation-oracles-revisited",
     "quantum-channel-stein-theorem-beyond-definite-causal-order",
     "exact-series-formulas-for-the-capacities-of-the-amplitude-da",
-    "deployment-of-large-iqp-circuit-born-machines-on-qubit-limit"
+    "deployment-of-large-iqp-circuit-born-machines-on-qubit-limit",
+    "multilevel-plaquette-space-sampling-for-lattice-gauge-theori"
   ]
 }
