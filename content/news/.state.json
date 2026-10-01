@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2609.38168v1",
+  "lastSeenId": "http://arxiv.org/abs/2609.40355v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -40,6 +40,7 @@
     "exact-series-formulas-for-the-capacities-of-the-amplitude-da",
     "deployment-of-large-iqp-circuit-born-machines-on-qubit-limit",
     "multilevel-plaquette-space-sampling-for-lattice-gauge-theori",
-    "when-classical-correlations-certify-entanglement-recovery"
+    "when-classical-correlations-certify-entanglement-recovery",
+    "quantum-hypothesis-testing-of-non-mixed-unitarity-a-multifac"
   ]
 }
