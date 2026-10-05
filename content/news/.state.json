@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.02183v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.03714v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -42,6 +42,7 @@
     "multilevel-plaquette-space-sampling-for-lattice-gauge-theori",
     "when-classical-correlations-certify-entanglement-recovery",
     "quantum-hypothesis-testing-of-non-mixed-unitarity-a-multifac",
-    "single-particle-spectral-estimation"
+    "single-particle-spectral-estimation",
+    "spidercss-scalable-fault-tolerant-css-state-preparation"
   ]
 }
