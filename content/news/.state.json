@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.03714v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.06849v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -43,6 +43,7 @@
     "when-classical-correlations-certify-entanglement-recovery",
     "quantum-hypothesis-testing-of-non-mixed-unitarity-a-multifac",
     "single-particle-spectral-estimation",
-    "spidercss-scalable-fault-tolerant-css-state-preparation"
+    "spidercss-scalable-fault-tolerant-css-state-preparation",
+    "boundary-accessible-work-in-a-collision-charged-topological-"
   ]
 }
