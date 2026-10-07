@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.06849v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.08786v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -44,6 +44,7 @@
     "quantum-hypothesis-testing-of-non-mixed-unitarity-a-multifac",
     "single-particle-spectral-estimation",
     "spidercss-scalable-fault-tolerant-css-state-preparation",
-    "boundary-accessible-work-in-a-collision-charged-topological-"
+    "boundary-accessible-work-in-a-collision-charged-topological-",
+    "energy-constrained-two-way-capacity-bounds-for-noisy-gaussia"
   ]
 }
