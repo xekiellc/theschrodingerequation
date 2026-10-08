@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fault-counting estimator computes full logical sensitivity gradients in one simulation pass — The Schrödinger Equation</title>
+<meta name="description" content="A new differentiable estimator extracts error budget sensitivities from QEC simulations with 10–100× fewer samples than finite differences.">
+<link rel="canonical" href="https://theschrodingerequation.com/news/efficient-estimation-of-logical-sensitivities-through-fault-/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTR1K4Y5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YPTR1K4Y5G");
+</script>
+<style>
+  .post-body{ max-width:640px; margin:0 auto; color:var(--chalk-dim); font-size:15.5px; line-height:1.75; }
+  .post-body p{margin:0 0 16px;}
+  .post-meta{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chalk-dim); margin-bottom:32px; }
+  .post-source{ text-align:center; margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:12px; }
+  .post-source a{ color:var(--teal); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../../" class="brand"><span class="psi">Ψ</span><span class="psi-sq">|Ψ|²</span> THE SCHRÖDINGER EQUATION</a>
+    <nav class="links">
+      <a href="../../equation/">Equation</a>
+      <a href="../../quantum-101/">Concepts</a>
+      <a href="../../weird-stuff/">Weird Stuff</a>
+      <a href="../../experiments/">Experiments</a>
+      <a href="../../people/">People</a>
+      <a href="../../applications/">Applications</a>
+      <a href="../../frontier/">Frontier</a>
+      <a href="../../news/">News</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-eyebrow"><span class="tag tag-thought">Preprint — Not Peer-Reviewed</span></div>
+  <h1 class="page-title">Fault-counting estimator computes full logical sensitivity gradients in one simulation pass</h1>
+  <p class="page-sub">A new differentiable estimator extracts error budget sensitivities from QEC simulations with 10–100× fewer samples than finite differences.</p>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="post-meta">October 7, 2026</div>
+    <div class="post-body"><p>This is an unreviewed preprint posted to arXiv and has not yet undergone peer review. The authors present a method for efficiently computing <em>logical sensitivities</em>—partial derivatives of the logical error rate with respect to each physical noise parameter—in quantum error-correcting circuits. Where conventional approaches require separate Monte Carlo simulation runs at multiple noise configurations to approximate each partial derivative via finite differences, the proposed estimator recovers the entire gradient vector from a single simulation run by exploiting information about the underlying fault configurations that standard decoders already process.</p><p>Applied to surface code simulations under circuit-level noise, the estimator is reported to match finite-difference benchmarks while reducing the number of required shots by one to two orders of magnitude for equivalent statistical variance. The paper demonstrates several downstream applications: constructing per-error-type and per-qubit error budgets, inferring effective code distance from sensitivity data, and accelerating threshold searches in multi-parameter noise models by feeding sensitivities into a Newton root-finding procedure to locate and trace threshold contours without exhaustive parameter sweeps.</p><p>The technique is framed as an add-on to existing Monte Carlo QEC simulation pipelines rather than a replacement, since it operates on fault configuration data that decoders already generate. If the efficiency claims hold up to peer scrutiny, the method could meaningfully reduce the computational cost of hardware characterization and code optimization workflows where many partial derivatives across large noise models are needed.</p></div>
+    <div class="post-source">Source: <a href="http://arxiv.org/abs/2610.10531v1" target="_blank" rel="noopener">http://arxiv.org/abs/2610.10531v1</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-psi">Ψ</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
+  </div>
+</footer>
+
+</body>
+</html>
