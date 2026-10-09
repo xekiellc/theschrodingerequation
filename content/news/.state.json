@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.10531v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.12454v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -46,6 +46,7 @@
     "spidercss-scalable-fault-tolerant-css-state-preparation",
     "boundary-accessible-work-in-a-collision-charged-topological-",
     "energy-constrained-two-way-capacity-bounds-for-noisy-gaussia",
-    "efficient-estimation-of-logical-sensitivities-through-fault-"
+    "efficient-estimation-of-logical-sensitivities-through-fault-",
+    "on-ppt-entanglement-distillation"
   ]
 }
