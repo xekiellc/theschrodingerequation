@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.16215v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.18827v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -49,6 +49,7 @@
     "efficient-estimation-of-logical-sensitivities-through-fault-",
     "on-ppt-entanglement-distillation",
     "an-entangling-hubbard-quasiparticle-collider-on-a-digital-qu",
-    "minimal-subsystems-for-characterizing-genuine-multipartite-e"
+    "minimal-subsystems-for-characterizing-genuine-multipartite-e",
+    "gaussian-entanglement-and-quantum-communication-geodesic-opt"
   ]
 }
