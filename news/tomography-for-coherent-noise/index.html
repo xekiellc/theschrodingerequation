@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protocol aims to characterize coherent noise with constant-scale experiments — The Schrödinger Equation</title>
+<meta name="description" content="A preprint proposes a tomography scheme that reduces coherent-noise parameter estimation from 16ⁿ to O(16) complexity.">
+<link rel="canonical" href="https://theschrodingerequation.com/news/tomography-for-coherent-noise/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTR1K4Y5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YPTR1K4Y5G");
+</script>
+<style>
+  .post-body{ max-width:640px; margin:0 auto; color:var(--chalk-dim); font-size:15.5px; line-height:1.75; }
+  .post-body p{margin:0 0 16px;}
+  .post-meta{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chalk-dim); margin-bottom:32px; }
+  .post-source{ text-align:center; margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:12px; }
+  .post-source a{ color:var(--teal); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../../" class="brand"><span class="psi">Ψ</span><span class="psi-sq">|Ψ|²</span> THE SCHRÖDINGER EQUATION</a>
+    <nav class="links">
+      <a href="../../equation/">Equation</a>
+      <a href="../../quantum-101/">Concepts</a>
+      <a href="../../weird-stuff/">Weird Stuff</a>
+      <a href="../../experiments/">Experiments</a>
+      <a href="../../people/">People</a>
+      <a href="../../applications/">Applications</a>
+      <a href="../../frontier/">Frontier</a>
+      <a href="../../news/">News</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-eyebrow"><span class="tag tag-thought">Preprint — Not Peer-Reviewed</span></div>
+  <h1 class="page-title">Protocol aims to characterize coherent noise with constant-scale experiments</h1>
+  <p class="page-sub">A preprint proposes a tomography scheme that reduces coherent-noise parameter estimation from 16ⁿ to O(16) complexity.</p>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="post-meta">October 14, 2026</div>
+    <div class="post-body"><p>Coherent noise — systematic unitary errors rather than random stochastic Pauli flips — is widely recognized as a particularly stubborn problem for quantum error correction. Unlike independent depolarizing noise, unitary errors preserve quantum interference between error paths, can compound across successive correction rounds, and leave residual coherence in the logical channel even after decoding. Accurate characterization of such noise is a prerequisite for exploiting it: if the noise model and its parameters are known, that information can seed the decoding graph with correlated priors or enable maximum-likelihood decoding under tractable structures.</p><p>In this unreviewed preprint posted to arXiv, the authors introduce a tomography protocol specifically designed to identify both the model and parameters of coherent noise acting on quantum error-correcting codes. The central claim is a dramatic reduction in experimental overhead: whereas a naïve characterization of n-qubit coherent noise might require a number of settings scaling as 16ⁿ, the proposed protocol is said to reduce this to O(16) — a constant with respect to system size. The mechanism behind this compression and its precise assumptions are detailed in the paper, but the headline figure, if it holds under scrutiny, would represent a significant practical improvement for noise-aware decoding strategies.</p><p>This work has not yet been peer-reviewed, and the claimed complexity reduction should be interpreted with appropriate caution until independently validated. Nonetheless, the approach addresses a concrete bottleneck: without efficient noise characterization, the theoretical advantages of coherence-aware decoders remain difficult to realize experimentally. The result, if confirmed, could inform decoder design for near-term fault-tolerant systems where coherent control errors are a dominant noise source.</p></div>
+    <div class="post-source">Source: <a href="http://arxiv.org/abs/2610.19779v1" target="_blank" rel="noopener">http://arxiv.org/abs/2610.19779v1</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-psi">Ψ</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
+  </div>
+</footer>
+
+</body>
+</html>
