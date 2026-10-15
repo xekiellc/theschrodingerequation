@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.19779v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.20591v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -51,6 +51,7 @@
     "an-entangling-hubbard-quasiparticle-collider-on-a-digital-qu",
     "minimal-subsystems-for-characterizing-genuine-multipartite-e",
     "gaussian-entanglement-and-quantum-communication-geodesic-opt",
-    "tomography-for-coherent-noise"
+    "tomography-for-coherent-noise",
+    "logical-ccz-state-cultivation"
   ]
 }
