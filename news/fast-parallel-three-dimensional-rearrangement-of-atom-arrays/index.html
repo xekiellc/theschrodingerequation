@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPU-computed holograms enable parallel 3D atom-array assembly in under 20 ms — The Schrödinger Equation</title>
+<meta name="description" content="An analytic hologram superposition method assembles 100-atom arrays with 99.31% per-atom survival, computed faster than SLM refresh rates.">
+<link rel="canonical" href="https://theschrodingerequation.com/news/fast-parallel-three-dimensional-rearrangement-of-atom-arrays/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTR1K4Y5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YPTR1K4Y5G");
+</script>
+<style>
+  .post-body{ max-width:640px; margin:0 auto; color:var(--chalk-dim); font-size:15.5px; line-height:1.75; }
+  .post-body p{margin:0 0 16px;}
+  .post-meta{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chalk-dim); margin-bottom:32px; }
+  .post-source{ text-align:center; margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:12px; }
+  .post-source a{ color:var(--teal); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../../" class="brand"><span class="psi">Ψ</span><span class="psi-sq">|Ψ|²</span> THE SCHRÖDINGER EQUATION</a>
+    <nav class="links">
+      <a href="../../equation/">Equation</a>
+      <a href="../../quantum-101/">Concepts</a>
+      <a href="../../weird-stuff/">Weird Stuff</a>
+      <a href="../../experiments/">Experiments</a>
+      <a href="../../people/">People</a>
+      <a href="../../applications/">Applications</a>
+      <a href="../../frontier/">Frontier</a>
+      <a href="../../news/">News</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-eyebrow"><span class="tag tag-thought">Preprint — Not Peer-Reviewed</span></div>
+  <h1 class="page-title">GPU-computed holograms enable parallel 3D atom-array assembly in under 20 ms</h1>
+  <p class="page-sub">An analytic hologram superposition method assembles 100-atom arrays with 99.31% per-atom survival, computed faster than SLM refresh rates.</p>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="post-meta">October 15, 2026</div>
+    <div class="post-body"><p>Assembling large, defect-free arrays of neutral atoms — a prerequisite for scalable quantum computing and simulation — requires rapidly correcting the random gaps left by stochastic trap loading. A preprint posted to arXiv (not yet peer-reviewed) describes a parallel rearrangement scheme in which all atoms are moved simultaneously by a spatial light modulator (SLM) displaying analytically computed holograms, rather than shuttling atoms one at a time as conventional approaches do.</p><p>The method constructs each hologram by superimposing the complex optical fields for every individual trap, then applies a linear phase ramp to each trap as it travels to its target — a formulation that treats trap positions as continuous variables rather than grid points, preserving sub-pixel positioning accuracy. Running on a single GPU, each intermediate hologram is computed in 0.284 ms, well within the SLM's 0.696 ms refresh cycle; the authors use the remaining processing margin to iteratively equalize trap intensities, achieving non-uniformity of 1.24% at no additional time cost. The paper also demonstrates axial (out-of-plane) atom transport, illustrated by a protocol in which one layer of atoms leapfrogs over another.</p><p>Starting from 256 stochastically loaded sites of ⁸⁷Rb, the system assembles a 100-atom array in under 20 ms with a per-atom rearrangement survival probability of 99.31(12)% and a measured temperature increase of only 9(3) μK against a trap depth of 480 μK. The authors argue the parallel architecture scales more favorably than sequential methods as array sizes grow, though independent validation awaits peer review.</p></div>
+    <div class="post-source">Source: <a href="http://arxiv.org/abs/2610.21609v1" target="_blank" rel="noopener">http://arxiv.org/abs/2610.21609v1</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-psi">Ψ</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
+  </div>
+</footer>
+
+</body>
+</html>
