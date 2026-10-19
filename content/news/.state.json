@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.22367v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.23840v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -54,6 +54,7 @@
     "tomography-for-coherent-noise",
     "logical-ccz-state-cultivation",
     "fast-parallel-three-dimensional-rearrangement-of-atom-arrays",
-    "discovering-state-of-the-art-quantum-circuits-with-large-lan"
+    "discovering-state-of-the-art-quantum-circuits-with-large-lan",
+    "demonstration-of-logical-error-suppression-in-a-surface-code"
   ]
 }
