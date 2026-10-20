@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.25976v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.26859v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -56,6 +56,7 @@
     "fast-parallel-three-dimensional-rearrangement-of-atom-arrays",
     "discovering-state-of-the-art-quantum-circuits-with-large-lan",
     "demonstration-of-logical-error-suppression-in-a-surface-code",
-    "conjugate-measurement-induced-evolution-towards-maximally-mi"
+    "conjugate-measurement-induced-evolution-towards-maximally-mi",
+    "boundary-sensitive-quantum-order-on-non-amenable-lattices"
   ]
 }
