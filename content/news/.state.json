@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.27939v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.28621v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -58,6 +58,7 @@
     "demonstration-of-logical-error-suppression-in-a-surface-code",
     "conjugate-measurement-induced-evolution-towards-maximally-mi",
     "boundary-sensitive-quantum-order-on-non-amenable-lattices",
-    "local-channel-stability-of-classical-mathbb-z-2-lattice-gaug"
+    "local-channel-stability-of-classical-mathbb-z-2-lattice-gaug",
+    "characterizing-supersolid-phase-transitions-in-trapped-quant"
   ]
 }
