@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.29562v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.30124v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -60,6 +60,7 @@
     "boundary-sensitive-quantum-order-on-non-amenable-lattices",
     "local-channel-stability-of-classical-mathbb-z-2-lattice-gaug",
     "characterizing-supersolid-phase-transitions-in-trapped-quant",
-    "quantum-enhanced-matterwave-interferometry-in-a-ring-wavegui"
+    "quantum-enhanced-matterwave-interferometry-in-a-ring-wavegui",
+    "phonon-assisted-free-electron-recoil-control-and-mechanical-"
   ]
 }
