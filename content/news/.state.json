@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.35119v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.35863v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -64,6 +64,7 @@
     "phonon-assisted-free-electron-recoil-control-and-mechanical-",
     "what-does-quantum-parameter-estimation-estimate-a-no-go-resu",
     "maximal-orbital-entanglement-from-non-interacting-fermions",
-    "multinomial-shot-sampling-for-quantum-circuits"
+    "multinomial-shot-sampling-for-quantum-circuits",
+    "complete-entropy-contraction-from-conditional-hyperboundedne"
   ]
 }
