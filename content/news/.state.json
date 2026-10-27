@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.32974v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.35119v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -63,6 +63,7 @@
     "quantum-enhanced-matterwave-interferometry-in-a-ring-wavegui",
     "phonon-assisted-free-electron-recoil-control-and-mechanical-",
     "what-does-quantum-parameter-estimation-estimate-a-no-go-resu",
-    "maximal-orbital-entanglement-from-non-interacting-fermions"
+    "maximal-orbital-entanglement-from-non-interacting-fermions",
+    "multinomial-shot-sampling-for-quantum-circuits"
   ]
 }

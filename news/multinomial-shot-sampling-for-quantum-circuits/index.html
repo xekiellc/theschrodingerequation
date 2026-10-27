@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multinomial sampling cuts quantum circuit simulation shot costs by 1000× — The Schrödinger Equation</title>
+<meta name="description" content="A preprint proposes replacing per-shot sampling in Qiskit and PennyLane with direct multinomial draws, making cost independent of shot count.">
+<link rel="canonical" href="https://theschrodingerequation.com/news/multinomial-shot-sampling-for-quantum-circuits/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTR1K4Y5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YPTR1K4Y5G");
+</script>
+<style>
+  .post-body{ max-width:640px; margin:0 auto; color:var(--chalk-dim); font-size:15.5px; line-height:1.75; }
+  .post-body p{margin:0 0 16px;}
+  .post-meta{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chalk-dim); margin-bottom:32px; }
+  .post-source{ text-align:center; margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:12px; }
+  .post-source a{ color:var(--teal); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../../" class="brand"><span class="psi">Ψ</span><span class="psi-sq">|Ψ|²</span> THE SCHRÖDINGER EQUATION</a>
+    <nav class="links">
+      <a href="../../equation/">Equation</a>
+      <a href="../../quantum-101/">Concepts</a>
+      <a href="../../weird-stuff/">Weird Stuff</a>
+      <a href="../../experiments/">Experiments</a>
+      <a href="../../people/">People</a>
+      <a href="../../applications/">Applications</a>
+      <a href="../../frontier/">Frontier</a>
+      <a href="../../news/">News</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-eyebrow"><span class="tag tag-thought">Preprint — Not Peer-Reviewed</span></div>
+  <h1 class="page-title">Multinomial sampling cuts quantum circuit simulation shot costs by 1000×</h1>
+  <p class="page-sub">A preprint proposes replacing per-shot sampling in Qiskit and PennyLane with direct multinomial draws, making cost independent of shot count.</p>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="post-meta">October 26, 2026</div>
+    <div class="post-body"><p>In classical simulations of quantum circuits, extracting measurement statistics typically requires generating each shot individually — a step whose cost scales linearly with the number of shots <em>S</em> even after the full state vector is already known. A new arXiv preprint (not yet peer-reviewed) argues this is unnecessary when only aggregate counts are needed, and proposes a direct alternative.</p><p>The authors show that measurement counts can instead be drawn directly from a multinomial distribution, decomposed into a sequence of conditional binomial samples. Each binomial draw is performed in expected constant time using the established BTPE algorithm, making the total sampling cost effectively independent of <em>S</em>. The implementation also includes an optimization for states whose probability mass is concentrated on relatively few outcomes. Benchmarks against Qiskit's sampling primitives across up to 20 qubits and 10<sup>6</sup> shots report speedup factors exceeding 10<sup>3</sup> in most configurations at the largest shot count, with the resulting samples described as statistically indistinguishable from those of the reference implementations.</p><p>The approach targets a specific but routine bottleneck in quantum circuit simulation workflows. Because this is an unreviewed preprint, the benchmarking methodology and statistical equivalence claims await independent scrutiny, but the underlying algorithmic argument — that multinomial sampling is the correct abstraction when per-shot outcomes are discarded — is straightforward and well-grounded in classical statistics.</p></div>
+    <div class="post-source">Source: <a href="http://arxiv.org/abs/2610.35119v1" target="_blank" rel="noopener">http://arxiv.org/abs/2610.35119v1</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-psi">Ψ</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
+  </div>
+</footer>
+
+</body>
+</html>
