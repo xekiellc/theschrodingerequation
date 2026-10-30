@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local sweep rule achieves fault tolerance on toric codes without expansion — The Schrödinger Equation</title>
+<meta name="description" content="A preprint claims a constant-depth, purely local correction cycle suffices for fault-tolerant quantum computation on higher-dimensional toric codes.">
+<link rel="canonical" href="https://theschrodingerequation.com/news/local-quantum-fault-tolerance-without-expansion/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTR1K4Y5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YPTR1K4Y5G");
+</script>
+<style>
+  .post-body{ max-width:640px; margin:0 auto; color:var(--chalk-dim); font-size:15.5px; line-height:1.75; }
+  .post-body p{margin:0 0 16px;}
+  .post-meta{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chalk-dim); margin-bottom:32px; }
+  .post-source{ text-align:center; margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:12px; }
+  .post-source a{ color:var(--teal); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../../" class="brand"><span class="psi">Ψ</span><span class="psi-sq">|Ψ|²</span> THE SCHRÖDINGER EQUATION</a>
+    <nav class="links">
+      <a href="../../equation/">Equation</a>
+      <a href="../../quantum-101/">Concepts</a>
+      <a href="../../weird-stuff/">Weird Stuff</a>
+      <a href="../../experiments/">Experiments</a>
+      <a href="../../people/">People</a>
+      <a href="../../applications/">Applications</a>
+      <a href="../../frontier/">Frontier</a>
+      <a href="../../news/">News</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-eyebrow"><span class="tag tag-thought">Preprint — Not Peer-Reviewed</span></div>
+  <h1 class="page-title">Local sweep rule achieves fault tolerance on toric codes without expansion</h1>
+  <p class="page-sub">A preprint claims a constant-depth, purely local correction cycle suffices for fault-tolerant quantum computation on higher-dimensional toric codes.</p>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="post-meta">October 28, 2026</div>
+    <div class="post-body"><p>A new arXiv preprint — not yet peer-reviewed — proposes a fault-tolerant quantum computing scheme built around a geometrically simple family of error-correcting codes: cubical (d,d')-toric codes, including the well-studied 4D toric code. The central claim is that a fixed, local "sweep rule" applied at constant depth each correction cycle is sufficient to suppress errors below threshold, with no need for multiscale decoders, expansion-based code families, or scale-dependent classical communication. The correction rule acts only on the current syndrome and repeats unchanged during idle logical computation.</p><p>The authors establish three results. First, they give an explicit local algorithm for choosing sweep corrections on cubical toric complexes, addressing an open existence question posed by Kubica and Preskill. Second, they prove a circuit-level threshold theorem — meaning noisy syndrome extraction is accounted for — showing that sweep cycles interleaved with logical gates can achieve fault tolerance. Third, they extend ideal-decoding guarantees to local-stochastic Pauli noise (a more physically realistic model than independent errors), showing that after O(n^{d+1}) noiseless sweep cycles, encoded information is recovered with probability exponentially close to one. Crucially, the proof avoids expansion arguments, instead combining geometric shrinking under the sweep rule with a space-time explanation-tree technique inspired by Toom's theorem from classical cellular automata theory.</p><p>If the results hold up to peer review, they would clarify the computational power of purely local, constant-depth decoding for topological codes in dimensions four and above — a question with direct relevance to understanding what physical overhead self-correcting or locally decodable quantum memories might require. The authors are explicit that constant total-depth overhead is not claimed; the scheme's practical cost relative to alternatives remains an open question.</p></div>
+    <div class="post-source">Source: <a href="http://arxiv.org/abs/2610.38847v1" target="_blank" rel="noopener">http://arxiv.org/abs/2610.38847v1</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-psi">Ψ</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
+  </div>
+</footer>
+
+</body>
+</html>

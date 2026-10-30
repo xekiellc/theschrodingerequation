@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.37665v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.38847v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -66,6 +66,7 @@
     "maximal-orbital-entanglement-from-non-interacting-fermions",
     "multinomial-shot-sampling-for-quantum-circuits",
     "complete-entropy-contraction-from-conditional-hyperboundedne",
-    "exact-analytical-treatment-of-collectively-pumped-dicke-supe"
+    "exact-analytical-treatment-of-collectively-pumped-dicke-supe",
+    "local-quantum-fault-tolerance-without-expansion"
   ]
 }
