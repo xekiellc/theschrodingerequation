@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.40652v1",
+  "lastSeenId": "http://arxiv.org/abs/2610.41268v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -68,6 +68,7 @@
     "complete-entropy-contraction-from-conditional-hyperboundedne",
     "exact-analytical-treatment-of-collectively-pumped-dicke-supe",
     "local-quantum-fault-tolerance-without-expansion",
-    "reconstructing-hidden-observables-via-quantum-snapshot-therm"
+    "reconstructing-hidden-observables-via-quantum-snapshot-therm",
+    "testing-hardware-quantum-machine-learning-claims-with-a-null"
   ]
 }
