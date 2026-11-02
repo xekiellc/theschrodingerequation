@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret-shared gate teleportation lets a recipient be chosen after resource distribution — The Schrödinger Equation</title>
+<meta name="description" content="A preprint proposes distributing a quantum gate's capability among n parties, with a later key release activating exactly one chosen node.">
+<link rel="canonical" href="https://theschrodingerequation.com/news/secret-shared-teleportation-of-a-two-qudit-gate-with-a-defer/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPTR1K4Y5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-YPTR1K4Y5G");
+</script>
+<style>
+  .post-body{ max-width:640px; margin:0 auto; color:var(--chalk-dim); font-size:15.5px; line-height:1.75; }
+  .post-body p{margin:0 0 16px;}
+  .post-meta{ text-align:center; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--chalk-dim); margin-bottom:32px; }
+  .post-source{ text-align:center; margin-top:40px; font-family:'IBM Plex Mono', monospace; font-size:12px; }
+  .post-source a{ color:var(--teal); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../../" class="brand"><span class="psi">Ψ</span><span class="psi-sq">|Ψ|²</span> THE SCHRÖDINGER EQUATION</a>
+    <nav class="links">
+      <a href="../../equation/">Equation</a>
+      <a href="../../quantum-101/">Concepts</a>
+      <a href="../../weird-stuff/">Weird Stuff</a>
+      <a href="../../experiments/">Experiments</a>
+      <a href="../../people/">People</a>
+      <a href="../../applications/">Applications</a>
+      <a href="../../frontier/">Frontier</a>
+      <a href="../../news/">News</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-eyebrow"><span class="tag tag-thought">Preprint — Not Peer-Reviewed</span></div>
+  <h1 class="page-title">Secret-shared gate teleportation lets a recipient be chosen after resource distribution</h1>
+  <p class="page-sub">A preprint proposes distributing a quantum gate's capability among n parties, with a later key release activating exactly one chosen node.</p>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="post-meta">October 30, 2026</div>
+    <div class="post-body"><p>A preprint posted to arXiv (not yet peer-reviewed) introduces a protocol for "secret-shared teleportation" of a two-qudit entangling gate, specifically the CSUM<sup>k</sup> gate, in which the intended recipient need not be fixed at the time the entangled resource is created. Ordinarily, gate teleportation embeds a specific quantum operation into an entangled resource whose destination is determined during resource preparation. The authors claim to sidestep this constraint by encrypting the gate capability into <em>n</em> shares distributed in advance; a subsequently released key then activates exactly one candidate node, chosen after distribution has already occurred.</p><p>The construction centers on a provider who encrypts half of a Bell pair into <em>n</em> shares, one per candidate node. The paper claims that the selected node, upon receiving key qudits, can complete the non-local gate exactly across every measurement branch and for arbitrary qudit dimension <em>d</em>, with the power <em>k</em> chosen freely by the user. The authors further claim that any coalition of fewer than <em>n</em> nodes, or the key register alone, obtains zero information about the gate or its application; unselected nodes cannot determine whether a selection has occurred; and the key cannot be used twice. For the two-candidate case, the combined registers are said to realize a ((3,5)) quantum threshold scheme. Encoder and decoder circuits are described as explicit O(n) constructions.</p><p>The protocol is presented as supporting both jointly authorized and anonymous gate application, with potential relevance to distributed quantum computing and quantum network architectures. Because this is an unreviewed preprint, the claimed security properties and circuit correctness have not yet been independently validated; readers should treat the results accordingly until peer review has assessed the proofs and constructions.</p></div>
+    <div class="post-source">Source: <a href="http://arxiv.org/abs/2610.42150v1" target="_blank" rel="noopener">http://arxiv.org/abs/2610.42150v1</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-psi">Ψ</div>
+    <div class="footer-note">THE SCHRÖDINGER EQUATION</div>
+  </div>
+</footer>
+
+</body>
+</html>
