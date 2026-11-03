@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2610.42150v1",
+  "lastSeenId": "http://arxiv.org/abs/2611.03639v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -70,6 +70,7 @@
     "local-quantum-fault-tolerance-without-expansion",
     "reconstructing-hidden-observables-via-quantum-snapshot-therm",
     "testing-hardware-quantum-machine-learning-claims-with-a-null",
-    "secret-shared-teleportation-of-a-two-qudit-gate-with-a-defer"
+    "secret-shared-teleportation-of-a-two-qudit-gate-with-a-defer",
+    "quantum-channel-tomography-optimal-bounds-in-the-near-bounda"
   ]
 }
