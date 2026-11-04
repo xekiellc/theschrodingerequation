@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2611.04306v1",
+  "lastSeenId": "http://arxiv.org/abs/2611.05375v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -72,6 +72,7 @@
     "testing-hardware-quantum-machine-learning-claims-with-a-null",
     "secret-shared-teleportation-of-a-two-qudit-gate-with-a-defer",
     "quantum-channel-tomography-optimal-bounds-in-the-near-bounda",
-    "approximate-synthetic-spectra-of-quantum-systems-associated-"
+    "approximate-synthetic-spectra-of-quantum-systems-associated-",
+    "quantum-error-correction-in-nearly-critical-toric-codes"
   ]
 }
