@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2611.06473v1",
+  "lastSeenId": "http://arxiv.org/abs/2611.06917v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -74,6 +74,7 @@
     "quantum-channel-tomography-optimal-bounds-in-the-near-bounda",
     "approximate-synthetic-spectra-of-quantum-systems-associated-",
     "quantum-error-correction-in-nearly-critical-toric-codes",
-    "quasi-normal-modes-and-thermalization-in-integrable-quantum-"
+    "quasi-normal-modes-and-thermalization-in-integrable-quantum-",
+    "using-topology-to-reveal-all-mutually-unbiased-bases-in-dime"
   ]
 }
