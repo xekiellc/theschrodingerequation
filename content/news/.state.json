@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2611.08000v1",
+  "lastSeenId": "http://arxiv.org/abs/2611.08488v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -76,6 +76,7 @@
     "quantum-error-correction-in-nearly-critical-toric-codes",
     "quasi-normal-modes-and-thermalization-in-integrable-quantum-",
     "using-topology-to-reveal-all-mutually-unbiased-bases-in-dime",
-    "quantum-relative-entropy-and-information-flux-resolve-wavefu"
+    "quantum-relative-entropy-and-information-flux-resolve-wavefu",
+    "provable-circuit-level-thresholds-for-non-abelian-topologica"
   ]
 }
