@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2611.09464v1",
+  "lastSeenId": "http://arxiv.org/abs/2611.09876v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -78,6 +78,7 @@
     "using-topology-to-reveal-all-mutually-unbiased-bases-in-dime",
     "quantum-relative-entropy-and-information-flux-resolve-wavefu",
     "provable-circuit-level-thresholds-for-non-abelian-topologica",
-    "dynamics-and-pseudospectra-around-quantum-exceptional-points"
+    "dynamics-and-pseudospectra-around-quantum-exceptional-points",
+    "novikov-magnus-master-equation-for-driven-quantum-systems-un"
   ]
 }
