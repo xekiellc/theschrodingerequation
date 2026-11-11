@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2611.14044v1",
+  "lastSeenId": "http://arxiv.org/abs/2611.14484v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -81,6 +81,7 @@
     "dynamics-and-pseudospectra-around-quantum-exceptional-points",
     "novikov-magnus-master-equation-for-driven-quantum-systems-un",
     "dephasing-induced-melting-of-crystalline-spectral-form-facto",
-    "cv-tf-qkd"
+    "cv-tf-qkd",
+    "nonperturbative-string-dynamics-in-a-2-1-d-lattice-gauge-the"
   ]
 }
