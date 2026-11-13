@@ -1,5 +1,5 @@
 {
-  "lastSeenId": "http://arxiv.org/abs/2611.15573v1",
+  "lastSeenId": "http://arxiv.org/abs/2611.17335v1",
   "publishedSlugs": [
     "gpu-implementation-of-mixed-quantum-classical-liouville-mole",
     "classical-adversarial-fault-tolerance-and-pcps",
@@ -83,6 +83,7 @@
     "dephasing-induced-melting-of-crystalline-spectral-form-facto",
     "cv-tf-qkd",
     "nonperturbative-string-dynamics-in-a-2-1-d-lattice-gauge-the",
-    "quantum-logic-detection-of-rotationally-inelastic-collisions"
+    "quantum-logic-detection-of-rotationally-inelastic-collisions",
+    "long-lived-light-driven-bimagnons-at-finite-momentum-in-nio"
   ]
 }
